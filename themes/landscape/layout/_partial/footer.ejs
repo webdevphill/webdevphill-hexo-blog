@@ -1,0 +1,11 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank"> Hexo</a>
+      <a class="copyright">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> </a><span class="footer-wdp-logo"></span><br>
+    </div>
+  </div>
+</footer>
