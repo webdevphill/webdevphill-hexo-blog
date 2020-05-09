@@ -265,16 +265,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="495.02488"
+     inkscape:cx="319.31059"
      inkscape:cy="454.7937"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="svg8"
      showgrid="false"
-     inkscape:window-width="1856"
-     inkscape:window-height="1385"
-     inkscape:window-x="1414"
-     inkscape:window-y="1090"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="2465"
+     inkscape:window-height="1406"
+     inkscape:window-x="84"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -284,14 +284,15 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title
-           WebDevPhill_Logo=""></dc:title>
+           WebDevPhill_Logo="" />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="matrix(1.2482245,0,0,1.2529943,-26.136562,-37.822741)">
     <path
        style="fill:#767676;fill-opacity:1;stroke:#898989;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7296)"
        d="m 420.22266,60.755859 9.91601,28.845703 a 45.35433,45.35433 0 0 0 -5.39062,21.414058 45.35433,45.35433 0 0 0 45.35351,45.35352 45.35433,45.35433 0 0 0 45.35352,-45.35352 45.35433,45.35433 0 0 0 -5.87696,-22.216792 l 9.64063,-28.042969 -19.74414,15.714844 A 45.35433,45.35433 0 0 0 470.10156,65.660156 45.35433,45.35433 0 0 0 440.39844,76.814453 Z"
@@ -306,7 +307,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccccccc" />
     <circle
-       style="fill:#ff8e13;fill-opacity:1;stroke:none;stroke-width:0.364716;stroke-opacity:1;filter:url(#filter5898);stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#ff8e13;fill-opacity:1;stroke:none;stroke-width:0.36471599;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5898)"
        id="path5071"
        cx="57.48"
        cy="100.98"

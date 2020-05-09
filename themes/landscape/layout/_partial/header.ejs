@@ -1,14 +1,17 @@
 <header id="header">
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
-      <div class="header-logo">
-        <img class="title-logo" alt="WebDev Phill Logo" src="/assets/logo/WebDevPhill_Logo.svg">
-        <span class="title-text">WebDev Phill</span>
-        <% if (theme.subtitle){ %>
-          <h2 id="subtitle-wrap">
-            <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
-          </h2>
-        <% } %>
+      <div class="logo-wrap">
+        <div class="header-logo">     
+          <span class="title-text-left">WebDev</span>
+            <img class="title-logo" alt="WebDev Phill Logo" src="/assets/logo/WebDevPhill_Logo.svg"> 
+          <span class="title-text-right">Phill</span>  
+          <% if (theme.subtitle){ %>
+            <h2 id="subtitle-wrap">
+              <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+            </h2>
+          <% } %>
+        </div>
       </div>
     </div>
     <div id="header-inner" class="inner">
