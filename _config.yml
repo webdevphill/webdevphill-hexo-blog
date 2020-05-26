@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: WebDev Phill
+title: AUX Codes
 subtitle: 
 description: Description
 keywords: keyword one, keyword two, keyword three
-author: webdevphill
+author: aux.codes
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.webdevphill.com
+url: https://blog.aux.codes
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
