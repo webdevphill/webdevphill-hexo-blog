@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  Projects: https://projects.aux.codes
 rss: /atom.xml
 
 # Content
