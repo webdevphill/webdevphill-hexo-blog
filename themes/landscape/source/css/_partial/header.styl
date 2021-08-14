@@ -1,205 +1,117 @@
-#header
-  height: banner-height
+@import "_variables"
+
+#header 
+  height: 220px
   position: relative
-  border-bottom: 1px solid color-border
-  &:before, &:after
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    height: 40px
-  &:before
-    top: 0
-  &:after
-    bottom: 0
+  border-bottom: 1px solid #ddd
 
-#header-outer
-  height: 100%
-  position: relative
-
-#header-inner
-  position: relative
-  overflow: hidden
-
-#banner
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background: url(banner-url) center #000
-  background-size: cover
-  z-index: -1
-
-#header-title
-  text-align: center
-  height: 100%
-  width: 100%
-  position: absolute
-  top: 0
-  left: 0
-  background-color: color-header-background
-  margin: 0
-
-.logo-wrap
+.header 
   display: flex
-  margin: 40px auto
-  height: 140px
-  width: 415px
-  border-radius: 70px
-  background-color: #f1f1f1
-  box-shadow: inset 0px 12px 16px 0 rgba(0, 0, 0, 0.1),inset 0px -12px 16px 0 rgb(255, 255, 255)
-  border: 1px solid color-widget-border
-  .header-logo
-    display: flex
-    margin: auto
-    width: 375px
-    height: 100px
-    justify-content: center
-    border-radius: 50px
-    background-color: #f1f1f1
-    box-shadow: 0px 12px 16px 0 rgba(0, 0, 0, 0.1), 0px -12px 16px 0 rgb(255, 255, 255)
-    .title-logo
-      min-width: 100px
-      height: 80px
-      margin: auto
-      border-radius: 69px
-      background: #666666
-      @media screen and (max-width: 350px)
-        min-width: 0px
-    .title-text-left
-      margin: 0 0 0 15px
-      font-size: 3rem
-      align-self: center
-      font-family: 'Righteous', cursive
-      color: #767676
-      text-align: right
-    .title-text-right
-      margin: 0 15px 0 0
-      font-size: 3rem
-      align-self: center
-      font-family: 'Righteous', cursive
-      color: #767676
-      text-align: left
-
-$logo-text
-  text-decoration: none
-  color: #666666
-  font-weight: 500
-
-#logo
-  @extend $logo-text
-  font-size: logo-size
-  line-height: logo-size
-  letter-spacing: 2px
-
-#subtitle
-  @extend $logo-text
-  font-size: subtitle-size
-  line-height: subtitle-size
-  letter-spacing: 1px
-
-#subtitle-wrap
-  margin-top: subtitle-size
-  font-family: 'Viga', sans-serif
-
-#main-nav
-  float: left
-  margin-left: -15px
-
-$nav-link
-  float: left
-  color: #666666
-  opacity: 0.7
-  text-decoration: none
-  transition: opacity 0.2s
-  display: block
-  padding: 20px 15px
-  &:hover
-    opacity: 1
-
-.nav-icon
-  @extend $nav-link
-  font-family: font-icon
-  text-align: center
-  font-size: font-size
-  width: font-size
-  height: font-size
-  padding: 20px 15px
-  position: relative
-  cursor: pointer
-
-.main-nav-link
-  @extend $nav-link
-  font-weight: 500
-  letter-spacing: 1px
-  @media mq-mobile
-    display: none
-
-#main-nav-toggle
-  display: none
-  &:before
-    content: "\f0c9"
-  @media mq-mobile
-    display: block
-
-#sub-nav
-  float: right
-  margin-right: -15px
-
-#nav-rss-link
-  &:before
-    content: "\f09e"
-
-#nav-search-btn
-  &:before
-    content: "\f002"
-
-#search-form-wrap
-  position: absolute
-  top: 15px
-  width: 150px
-  height: 30px
-  right: -150px
-  opacity: 0
-  transition: 0.2s ease-out
-  &.on
-    opacity: 1
-    right: 0
-  @media mq-mobile
-    width: 100%
-    right: -100%
-
-.search-form
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  background: #fff
-  padding: 5px 15px
-  border-radius: 15px
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
-
-.search-form-input
-  border: none
-  background: none
-  color: color-default
+  flex-direction: column
+  margin: 10px auto
   width: 100%
-  font: 13px font-sans
-  outline: none
-  &::-webkit-search-results-decoration
-  &::-webkit-search-cancel-button
-    -webkit-appearance: none
+  justify-content: center
 
-.search-form-submit
-  position: absolute
-  top: 50%
-  right: 10px
-  margin-top: -7px
-  font: 13px font-icon
-  border: none
-  background: none
-  color: #bbb
-  cursor: pointer
-  &:hover, &:focus
-    color: #777
+  .logo-wrap 
+    display: flex
+    margin: 24px auto
+    height: 140px
+    width: 415px
+    border-radius: 70px
+    background-color: color-header-background
+    box-shadow: inset 0px 12px 16px 0 rgba(0, 0, 0, 0.1), inset 0px -12px 16px 0 rgb(255, 255, 255)
+    border: 1px solid color-border-logo
+    flex-shrink: 0
+    .header-logo 
+      display: flex
+      margin: auto
+      width: 375px
+      height: 100px
+      justify-content: center
+      border-radius: 50px
+      background-color: color-header-background
+      box-shadow: 0px 12px 16px 0 rgba(0, 0, 0, 0.1), 0px -12px 16px 0 rgb(255, 255, 255)
+    
+  .logo 
+    min-width: 100px
+    height: 80px
+    margin: auto
+    border-radius: 69px
+    background: color-darkgrey
+
+    @media screen and (max-width: 350px) 
+      min-width: 0px
+    
+  .title 
+    font-size: 3rem
+    align-self: center
+    font-family: "Righteous", cursive
+    color: color-darkgrey
+  
+  .left 
+    text-align: center
+    margin: 0 15px 0 0
+  
+  .right 
+    text-align: center
+    margin: 0 0 0 15px
+  
+  #header-inner 
+    position: relative
+  
+  .inner 
+    display: flex
+    #main-nav 
+      display: flex
+      margin: auto auto auto 0
+
+      .main-nav-link 
+        display: block
+        font-weight: 500
+        letter-spacing: 1px
+        color: #666
+        opacity: 0.7
+        text-decoration: none
+        -webkit-transition: opacity 0.2s
+        -moz-transition: opacity 0.2s
+        -ms-transition: opacity 0.2s
+        transition: opacity 0.2s
+        padding: 0px 15px
+      
+    #search-form-wrap
+      display: flex
+      height: 30px
+      right: 0px
+      opacity: 1
+      transition: 0.2s ease-out
+      @media mq-mobile
+        width: 100%
+        right: -100%
+  
+    .search-form
+      background: #fff
+      padding: 5px 15px
+      border-radius: 15px
+      border: 1px solid #dcdcdc
+
+      .search-form-input
+        border: none
+        background: none
+        color: color-default
+        width: 100%
+        font: 13px font-sans
+        outline: none
+
+      .search-form-submit
+        position: absolute
+        top: 50%
+        right: 10px
+        margin-top: -7px
+        font: 13px font-icon
+        border: none
+        background: none
+        color: #bbb
+        cursor: pointer
+        &:hover, &:focus
+          color: #777
+      
