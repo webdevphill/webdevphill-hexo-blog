@@ -1,5 +1,6 @@
 ---
 title: Posting Images to Hexo
+date: 2020-10-25 
 tags:
 - images
 - hexo
