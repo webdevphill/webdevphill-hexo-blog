@@ -13,8 +13,8 @@ categories: Hexo
 The format for displaying images:
 ``` markdown
 ![](<path to image> <image title>)
-![](/assets/images/2021-08-14/kittycat1.jpg "Image of Cat")
+![](/assets/images/2020-10-25/kittycat1.jpg "Image of Cat")
 ```
 The resulting image should look like so:
 
-![](/assets/images/2021-08-14/kittycat1.jpg "Image of Cat")
+![](/assets/images/2020-10-25/kittycat1.jpg "Image of Cat")
