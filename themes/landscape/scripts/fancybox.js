@@ -4,21 +4,15 @@ var rUrl = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:ww
 * Fancybox tag
 *
 * Syntax:
-*   {% fancybox /path/to/image [/path/to/thumbnail] [title] %}
+*   {% fancybox /path/to/image [caption] [title] %}
 */
 
 hexo.extend.tag.register('fancybox', function(args){
-  var original = args.shift(),
-    thumbnail = '';
-
-  if (args.length && rUrl.test(args[0])){
-    thumbnail = args.shift();
-  }
-
+  var original = args.shift();
+  var caption = args.shift();
   var title = args.join(' ');
 
   return '<a class="fancybox" href="' + original + '" title="' + title + '">' +
-    '<img src="' + (thumbnail || original) + '" alt="' + title + '">'
-    '</a>' +
-    (title ? '<span class="caption">' + title + '</span>' : '');
+    '<img src="' + original + '" alt="' + title + '">' + '</a>' +
+    (caption ? '<span class="caption">' + caption + '</span>' : '');
 });
