@@ -36,9 +36,9 @@ hexo.extend.tag.register('fancybox', function(args){
   var caption = args.shift();
   var title = args.join(' ');
 
-  return '<a class="fancybox" href="' + original + '" title="' + title + '">' +
-    '<img src="' + original + '" alt="' + title + '">' + '</a>' +
-    (caption ? '<span class="caption">' + caption + '</span>' : '');
+  return '<p><a class="fancybox" href="' + original + '" title="' + title + '">' +
+    '<img src="' + original + '" alt="' + title + '"></a>' +
+    (caption ? '<span class="caption">' + caption + '</span>' : '') + '</p>';
 });
 ```
 
@@ -48,5 +48,5 @@ The resulting markdown image should look like so:
 
 The resulting Fancybox tag should look like this:
 
+
 {% fancybox /assets/images/2020-10-25/kittycat1.jpg "Meow Cat" "Image of Cat" %}
-`

@@ -15,7 +15,7 @@ categories: Netlify
 
 If you enter a specific URL route for your SPA, by default Netlify won't know what to do with it and your page won't load.
 
-![](/assets/images/2021-08-16/PageNotFound.png "Page Not Found")
+![](/assets/images/2020-11-16/PageNotFound.png "Page Not Found")
 
 To fix ths you will need to add a _redirects file to your source directory.
 

@@ -12,7 +12,7 @@ hexo.extend.tag.register('fancybox', function(args){
   var caption = args.shift();
   var title = args.join(' ');
 
-  return '<a class="fancybox" href="' + original + '" title="' + title + '">' +
-    '<img src="' + original + '" alt="' + title + '">' + '</a>' +
-    (caption ? '<span class="caption">' + caption + '</span>' : '');
+  return '<p><a class="fancybox" href="' + original + '" title="' + title + '">' +
+    '<img src="' + original + '" alt="' + title + '"></a>' +
+    (caption ? '<span class="caption">' + caption + '</span>' : '') + '</p>';
 });
