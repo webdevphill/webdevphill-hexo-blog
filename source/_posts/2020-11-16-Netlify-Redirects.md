@@ -19,14 +19,14 @@ If you enter a specific URL route for your SPA, by default Netlify won't know wh
 
 To fix ths you will need to add a _redirects file to your source directory.
 
-``` json
+```json
 src
  - _redirects
 ```
 
 Update your angular.json file so that it gets picked up as an asset.
 
-``` json
+```json
 ...
     "assets": [
         "src/favicon.ico",
@@ -36,10 +36,10 @@ Update your angular.json file so that it gets picked up as an asset.
 ...
 ```
 
-For your SPA you will need to redirect verything back to index.html.
-Add the folling to the _redirects file.
+For your SPA you will need to redirect everything back to index.html.
+Add the following to the _redirects file.
 
-``` json
+```json
 /* /index.html 200
 ```
 

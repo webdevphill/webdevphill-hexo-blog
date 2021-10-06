@@ -56,16 +56,14 @@ Turned out I needed to calculate Intensity Factor(IF) to calculate TSS and to ca
 *TSS = IF^2 x D x 100*
 
 ## Code
-The below code is based off the following example data:
+The code examples below both use the following example data:
+*10 minutes at 145 watts*  
+*20 minutes at 265 watts*  
+*30 minutes at 175 watts*
+*Normalized Power = 216 watts*
 
->10 minutes at 145 watts  
->20 minutes at 265 watts  
->30 minutes at 175 watts  
->
->Normalized Power = 216 watts
-
-
-``` C#
+Inline calculation:
+```csharp
 double NormalisedPower = Math.Pow( 
     (
         (10 * Math.Pow(145, 4)) + 
@@ -74,9 +72,9 @@ double NormalisedPower = Math.Pow(
     ) / 60, 1.0 / 4);
 ```
 
-Below is an example of the above as a function to process many input values.
+Below is an example of the above as a function to process many input values.  
 It requires a custom type for readability, however, you could just as easily use a tuple.
-``` C#
+```csharp
 // Custom Type
  public struct NormalisedPowerPair
 {
@@ -86,7 +84,7 @@ It requires a custom type for readability, however, you could just as easily use
     public NormalisedPowerPair(double time, double power) => (Time, Power) = (time, power);
 }
 ```
-``` C#
+```csharp
 // Function to parse many values
 static double NormalisedPower(NormalisedPowerPair[] normalisedPowerPairs)
 {
@@ -104,7 +102,7 @@ static double NormalisedPower(NormalisedPowerPair[] normalisedPowerPairs)
 }
 
 ```
-``` C#
+```csharp
 // Example use
 NormalisedPowerPair[] npPairs = {
             new NormalisedPowerPair(10, 145),

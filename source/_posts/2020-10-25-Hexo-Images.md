@@ -14,7 +14,7 @@ categories: Hexo
 
 ### Markdown Tag
 The format for displaying images:
-``` markdown
+```markdown
 # MarkDown
 ![image caption](<path to image> <image title>)
 ![Meow Cat](/assets/images/2020-10-25/kittycat1.jpg "Image of Cat")
@@ -28,7 +28,7 @@ The format for displaying images:
 However, this is not the standard Fancybox tag syntax, this is a modified version to have different caption text to image title/alt text.
 The fancybox.js script was updated as per below...
 
-``` javascript
+```javascript
 // themes/landscape/scripts/fancybox.js
 
 hexo.extend.tag.register('fancybox', function(args){
