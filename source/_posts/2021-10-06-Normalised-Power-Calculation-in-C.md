@@ -31,15 +31,16 @@ And being somewhat of a completist, the Zwift workouts that I have already uploa
 Obviously the only solution is to implement my own solution very specific solution, because the short time I spent searching for an easy way to fix FIT files returned zero results.
 
 Luckily the [Garmin FIT SDK](https://developer.garmin.com/fit/overview/) is available for developers and I have some C# experience (there are also examples for C, C++ and Java).
+Which means I can cobble something together and stick it on the internets for those like myself looking for a way to update their FIT files with Training Load data.
 
 So next step was to work out how to calculate Training Stress Score (TSS), the best article on the topic I found was from [slowtwitch.com](https://www.slowtwitch.com/Training/General_Physiology/Measuring_Power_and_Using_the_Data_302.html).
 Turned out I needed to calculate Intensity Factor(IF) to calculate TSS and to calculate IF I needed to calculate Normalized Power(NP).
 
 ### Normalised Power
-* t = time spent at that power level (minutes)
-* p = power output (watts)
+* T = time spent at that power level (minutes)
+* P = power output (watts)
 
-*NP = ( ( (t x p ^ 4) + ... + (t x p ^ 4) ) / 60 ) ^ (1.0 / 4)*
+*NP = ( ( (T x P ^ 4) + ... + (T x P ^ 4) ) / 60 ) ^ (1.0 / 4)*
 
 ### Intensity Factor
 * NP = Normalised Power (watts)
