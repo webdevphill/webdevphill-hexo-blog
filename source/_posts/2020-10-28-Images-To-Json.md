@@ -27,7 +27,7 @@ categories: Tools
 
 Images To JSON was developed out of a want to archive a [website](https://rca.aux.codes) that had been moved to the Shopify platform.
 
-The original site was build with a headless CMS backend and not wanting to pay hosting fees to preserve the website, all the backend data had to be converted to JSON files.
+The original site was built with a headless CMS backend and not wanting to pay hosting fees to preserve the website, all the backend data had to be converted to JSON files.
 
 This was fine for the majority of the text based data as it could be exported from the CMS, however, the data related to images could not and had to be reconstructed.
 
