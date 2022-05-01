@@ -29,7 +29,7 @@ archive_type: 'monthly'
 show_count: false
 
 # Miscellaneous
-google_analytics:
+google_analytics: G-VXXB5ZLX3V
 gauges_analytics:
 favicon: '
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
